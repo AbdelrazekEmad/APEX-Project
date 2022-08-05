@@ -1,0 +1,99 @@
+footer .upper_footer {
+  display: flex;
+}
+footer .upper_footer .part {
+  width: 25%;
+  margin: 3rem 0;
+  padding: 0 24px;
+}
+footer .upper_footer .part .logo a .color_white {
+  font-size: 2.5rem;
+}
+footer .upper_footer .part .logo a .color_white {
+  font-size: 2.5rem;
+}
+footer .upper_footer .part p {
+  margin: 1.5rem 0;
+}
+footer .upper_footer .part .footer_social i {
+  width: 40px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+footer .upper_footer .part h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+footer .upper_footer .part .address_info li {
+  margin-bottom: 1rem;
+}
+footer .upper_footer .part .address_info i {
+  margin-right: 1rem;
+}
+footer .upper_footer .part .links li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+footer .upper_footer .part .links li:hover {
+  letter-spacing: 1px;
+}
+footer .upper_footer .part .links li::before {
+  font-size: 16px;
+  content: "\f105";
+  position: relative;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  margin-right: 10px;
+}
+footer .upper_footer .part .search {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+footer .upper_footer .part .search input {
+  margin: 1rem;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+footer .upper_footer .part .btn {
+  padding: 8px 12px;
+}
+footer .copyright_footer {
+  padding: 1.5rem 0;
+}
+footer .copyright_footer .to_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.copyright_footer span {
+  cursor: pointer;
+}
+footer .copyright_footer .to_flex .owner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (max-width: 992px) {
+  footer .upper_footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .upper_footer .part {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  footer .upper_footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .upper_footer .part {
+    width: 100%;
+  }
+}

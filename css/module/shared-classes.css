@@ -1,0 +1,8 @@
+/* Start Buttons */
+.btn {
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.5s;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}

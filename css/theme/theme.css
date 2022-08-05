@@ -1,0 +1,121 @@
+:root {
+  --main-color: #fda12b;
+  --secondary-color: #8d9297;
+  --lighter-color: #f8f9fa;
+  --darker-color: #182333;
+}
+/* global rules */
+body,
+p,
+a {
+  color: var(--secondary-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--darker-color);
+}
+.border_right--light {
+  border-right: 1px solid #dee2e6;
+}
+.border_left--light {
+  border-left: 1px solid #dee2e6;
+}
+.color_white {
+  color: white !important;
+}
+.btn {
+  color: white;
+  background-color: var(--main-color);
+}
+.btn:hover {
+  color: white;
+  background-color: #fdaf4b;
+}
+/* Start uppperbar */
+.uppperbar {
+  background-color: var(--lighter-color);
+}
+
+/* Start Navbar */
+.logo_img {
+  color: var(--main-color);
+}
+nav .navlinks .links a:hover {
+  color: var(--main-color);
+}
+nav .navlinks .active {
+  color: var(--main-color);
+}
+nav .navlinks .dropdown_links {
+  background-color: var(--lighter-color);
+}
+
+/* Start footer */
+footer {
+  background-color: #182333;
+}
+footer .upper_footer .part .footer_social i {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+footer .upper_footer .part .footer_social i:hover {
+  color: white;
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+}
+footer .upper_footer .part h4 {
+  color: #f8f9fa;
+}
+footer .upper_footer .part .links li:hover a {
+  color: #f8f9fa;
+}
+footer .upper_footer .part .links li::before {
+  color: #999999;
+}
+footer .upper_footer .part .search {
+  color: #8d9297;
+  border: 1px solid #ced4da;
+}
+footer .copyright_footer {
+  color: #999;
+  border-top: 1px solid rgba(256, 256, 256, 0.1);
+}
+footer .copyright_footer span {
+  color: white;
+}
+footer .copyright_footer span:hover {
+  color: var(--main-color);
+}
+/* ************************************************************************************** */
+/* Start Home page  */
+/* Start Hero */
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.hero .overlay .content ul span::after {
+  color: var(--main-color);
+}
+
+/* Start About */
+.about_us .image .experience {
+  background-color: white;
+}
+.about_us .image .experience_content {
+  background-color: var(--main-color);
+}
+.about_us .content .about_heading {
+  border-left: 5px solid var(--main-color);
+}
+.about_us .content .about_heading h6 {
+  color: var(--secondary-color);
+}
+.about_us .content .about_benefits .benefit i{
+    color: var(--main-color);
+}
+.about_us .content .about_benefits{
+    border-top: 1px solid #dee2e6;
+}
