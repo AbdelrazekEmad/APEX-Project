@@ -136,3 +136,23 @@ footer .copyright_footer span:hover {
 .features .feature .overlay a:hover {
   color: var(--main-color);
 }
+
+/* Start WHY CHOOSE US */
+.why_choose_us .image .experience {
+background-color: white;
+}
+.why_choose_us .image .experience_content {
+  background-color: var(--main-color);
+}
+.why_choose_us .content .special_heading {
+  border-left: 5px solid var(--main-color);
+}
+.why_choose_us .content .special_heading h6 {
+  color: var(--secondary-color);
+}
+.why_choose_us .content .about_benefits .benefit i {
+  color: var(--main-color);
+}
+.why_choose_us .content .about_benefits {
+  border-top: 1px solid #dee2e6;
+}

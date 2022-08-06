@@ -8,11 +8,11 @@ body {
   scroll-behavior: smooth;
   height: 1000vh;
 }
-section{
+section {
   padding: 5rem 0;
 }
 @media (max-width: 768px) {
-  section{
+  section {
     padding: 3rem 0;
   }
 }
@@ -58,6 +58,13 @@ a {
 }
 
 /*large*/
+@media (min-width: 1200px) {
+  .contanier {
+    max-width: 1140px;
+  }
+}
+
+/*x-large*/
 @media (min-width: 1400px) {
   .contanier {
     max-width: 1320px;
