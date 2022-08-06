@@ -81,9 +81,12 @@
 .about_us .image .experience_content h4 {
   font-size: 1.25rem;
 }
-.about_us .image img {
+.about_us .image .photo {
   position: relative;
-  bottom: -3rem;
+}
+.about_us .image img {
+  position: absolute;
+  top: -7rem;
   right: -3rem;
 }
 .about_us .content {
@@ -123,7 +126,7 @@
   font-size: 2em;
   margin-right: 1rem;
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .about_us .contanier {
     flex-direction: column;
   }
@@ -141,7 +144,7 @@
     object-fit: cover;
     margin-bottom: 3rem;
   }
-}
+} */
 /* .about_us .content .about_benefits {
   flex-direction: column;
 }
@@ -149,3 +152,8 @@
   justify-content: flex-start;
   margin-bottom: 1.5rem;
 } */
+
+/* Start Features */
+.features {
+  
+}
