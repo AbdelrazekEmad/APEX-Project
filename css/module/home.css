@@ -54,7 +54,6 @@
   width: 50%;
   position: relative;
   padding: 0 2rem;
-  overflow: hidden;
 }
 .about_us .image .experience {
   width: 12.5rem;
@@ -83,6 +82,9 @@
 }
 .about_us .image .photo {
   position: relative;
+  overflow: hidden;
+  margin-top: 3rem;
+  height: 100%;
 }
 .about_us .image img {
   position: absolute;
@@ -93,16 +95,16 @@
   width: 50%;
   padding: 0 2rem;
 }
-.about_us .content .about_heading {
+.about_us .content .special_heading {
   padding-left: 1.5rem;
   margin-bottom: 3rem;
 }
-.about_us .content .about_heading h6 {
+.about_us .content .special_heading h6 {
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
-.about_us .content .about_heading h1 {
-  font-size: 2.25rem;
+.about_us .content .special_heading h1 {
+  font-size: 2.5rem;
   font-weight: 700;
 }
 .about_us .content .about_p p {
@@ -126,7 +128,12 @@
   font-size: 2em;
   margin-right: 1rem;
 }
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  .about_us .image img {
+    top: -1rem;
+  }
+}
+@media screen and (max-width: 768px) {
   .about_us .contanier {
     flex-direction: column;
   }
@@ -134,26 +141,61 @@
   .about_us .content {
     width: 100%;
   }
-
   .about_us .image img {
-    max-height: 400px;
-    bottom: 0;
-    right: 0;
-    bottom: 0rem;
-    right: 0rem;
-    object-fit: cover;
-    margin-bottom: 3rem;
+    position: relative;
   }
-} */
-/* .about_us .content .about_benefits {
-  flex-direction: column;
+  .about_us .image .photo {
+    min-height: 400px;
+  }
 }
-.about_us .content .about_benefits .benefit {
-  justify-content: flex-start;
-  margin-bottom: 1.5rem;
-} */
 
 /* Start Features */
 .features {
-  
+  display: flex;
+}
+.features .feature {
+  width: 25%;
+  position: relative;
+}
+.features .feature .overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.features .feature .overlay h2 {
+  font-size: 120px;
+}
+.features .feature .overlay h4 {
+  font-size: 1.5rem;
+}
+.features .feature .overlay a {
+  transition: all 0.3s;
+}
+.features .feature .overlay a::after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 1rem;
+}
+@media (max-width: 1200px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features .feature {
+    width: 50%;
+  }
+  .features .feature .overlay {
+    justify-content: center;
+  }
+  .features .feature .overlay h2,
+  .features .feature .overlay h4,
+  .features .feature .overlay a,
+  .features .feature .overlay p {
+    margin-bottom: 1rem;
+  }
 }

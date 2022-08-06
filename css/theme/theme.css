@@ -107,15 +107,32 @@ footer .copyright_footer span:hover {
 .about_us .image .experience_content {
   background-color: var(--main-color);
 }
-.about_us .content .about_heading {
+.about_us .content .special_heading {
   border-left: 5px solid var(--main-color);
 }
-.about_us .content .about_heading h6 {
+.about_us .content .special_heading h6 {
   color: var(--secondary-color);
 }
-.about_us .content .about_benefits .benefit i{
-    color: var(--main-color);
+.about_us .content .about_benefits .benefit i {
+  color: var(--main-color);
 }
-.about_us .content .about_benefits{
-    border-top: 1px solid #dee2e6;
+.about_us .content .about_benefits {
+  border-top: 1px solid #dee2e6;
+}
+
+/* Start Features */
+.features .feature .overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.features .feature .overlay h2 {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--main-color);
+}
+.features .feature .overlay h4,
+.features .feature .overlay p,
+.features .feature .overlay a {
+  color: white;
+}
+.features .feature .overlay a:hover {
+  color: var(--main-color);
 }
