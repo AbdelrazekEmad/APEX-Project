@@ -47,10 +47,13 @@ h6 {
 nav .navlinks .links a:hover {
   color: var(--main-color);
 }
-nav .navlinks .active {
+.active {
   color: var(--main-color);
 }
 nav .navlinks .dropdown_links {
+  background-color: var(--lighter-color);
+}
+nav .navlinks .toggle_menu:hover + .links {
   background-color: var(--lighter-color);
 }
 
@@ -193,5 +196,41 @@ footer .copyright_footer span:hover {
   background-color: white;
 }
 .our_team .our_team_enngineers .enngineer span {
+  color: var(--secondary-color);
+}
+
+/* Start TESTIMONIAL */
+.testimonial .achievements .icon i {
+  color: var(--main-color);
+}
+.testimonial .testimonial_clients .nav_arrows i {
+  border: 2px solid var(--main-color);
+}
+.testimonial .testimonial_clients .nav_arrows i:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+/* ************************************************************************************** */
+/* Start About_Us page  */
+
+.page_banar .overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+/* ************************************************************************************** */
+/* Start 404 error */
+.error_section i {
+  color: var(--main-color);
+}
+.error_section .btn a {
+  color: white !important;
+}
+
+/* ************************************************************************************** */
+/* Start contact Us page */
+.map_message .contact_form form input,
+.map_message .contact_form form textarea {
+  background-color: var(--lighter-color);
   color: var(--secondary-color);
 }

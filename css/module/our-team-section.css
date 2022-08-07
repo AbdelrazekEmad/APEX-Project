@@ -1,0 +1,62 @@
+/* Start OUR TEAM Section */
+.our_team .our_team_intro {
+    display: flex;
+    align-items: flex-end;
+  }
+  .our_team .our_team_intro .special_heading {
+    width: 50%;
+    margin-bottom: 0;
+  }
+  .our_team .our_team_intro .our_team_intro_p {
+    width: 50%;
+    float: left;
+  }
+  .our_team .our_team_enngineers {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .our_team .our_team_enngineers .enngineer {
+    width: calc(100% / 3);
+    position: relative;
+    padding: 0 0.5rem;
+  }
+  .our_team .our_team_enngineers .enngineer .text {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    width: 70%;
+    padding: 2rem 0 2rem 1rem;
+    transition: all 0.5s ease-in-out;
+  }
+  .our_team .our_team_enngineers .enngineer .text h5 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .our_team .our_team_enngineers .enngineer:hover .text {
+    width: 100%;
+    letter-spacing: 2px;
+  }
+  @media screen and (max-width: 768px) {
+    .our_team {
+      margin-top: 2rem;
+      padding: 0 10px;
+    }
+    .our_team .our_team_intro {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .our_team .our_team_intro .special_heading,
+    .our_team .our_team_intro .our_team_intro_p {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+    .our_team .our_team_enngineers .enngineer {
+      width: 50%;
+    }
+  }
+  @media (max-width: 575px) {
+    .our_team .our_team_enngineers .enngineer {
+      width: 100%;
+    }
+  }

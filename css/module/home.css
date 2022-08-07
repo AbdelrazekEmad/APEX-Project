@@ -46,113 +46,6 @@
   }
 }
 
-/* Start ABOUT US  */
-.about_us .contanier {
-  display: flex;
-}
-.about_us .image {
-  width: 50%;
-  position: relative;
-  padding: 0 2rem;
-}
-.about_us .image .experience {
-  width: 12.5rem;
-  height: 12.5rem;
-  position: absolute;
-  z-index: 10;
-  padding: 0 1rem 1rem 0;
-}
-.about_us .image .experience_content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
-}
-.about_us .image .experience_content h2 {
-  font-size: 2.5rem;
-}
-.about_us .image .experience_content h3 {
-  font-size: 2rem;
-}
-.about_us .image .experience_content h4 {
-  font-size: 1.25rem;
-}
-.about_us .image .photo {
-  position: relative;
-  overflow: hidden;
-  margin-top: 3rem;
-  height: 100%;
-}
-.about_us .image img {
-  position: absolute;
-  top: -7rem;
-  right: -3rem;
-}
-.about_us .content {
-  width: 50%;
-  padding: 0 2rem;
-}
-.special_heading {
-  padding-left: 1.5rem;
-  margin-bottom: 3rem;
-}
-.special_heading h6 {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-.special_heading h1 {
-  font-size: calc(1.375rem + 1.5vw);
-  font-weight: 700;
-}
-.about_us .content .about_p p {
-  margin-bottom: 1rem;
-}
-.about_us .content .about_benefits {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1.5rem;
-}
-.about_us .content .about_benefits .benefit {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 0.25rem;
-}
-.about_us .content .about_benefits .benefit h6 {
-  font-size: 1rem;
-  font-weight: 600;
-}
-.about_us .content .about_benefits .benefit i {
-  font-size: 2em;
-  margin-right: 1rem;
-}
-@media screen and (max-width: 1024px) {
-  .about_us .image img {
-    top: -1rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .about_us .contanier {
-    flex-direction: column;
-  }
-  .about_us .image,
-  .about_us .content {
-    width: 100%;
-  }
-  .about_us .image img {
-    position: relative;
-  }
-  .about_us .image .photo {
-    max-height: 400px;
-    margin-bottom: 3rem;
-  }
-  .about_us .content {
-    padding: 0 1rem;
-  }
-}
-
 /* Start Features */
 .features {
   display: flex;
@@ -336,226 +229,68 @@
   }
 }
 
-/* Start OUR SERVICES */
-.our_services .our_services_intro {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 2rem;
-}
-.our_services .our_services_intro .special_heading {
-  width: 50%;
-  margin-bottom: 0;
-}
-.our_services .our_services_intro button {
-  float: right;
-}
-.our_services .our_services_boxes {
-  display: flex;
-  flex-wrap: wrap;
-}
-.our_services .our_services_boxes .box {
-  width: calc(100% / 3);
-}
-.our_services .our_services_boxes .box .box_contanier {
-  margin: 0.5rem;
-  text-align: center;
-}
-.our_services .our_services_boxes .box .box_text {
-  padding: 2rem;
-  position: relative;
-}
-.our_services .our_services_boxes .box .box_text::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  height: 0;
-  z-index: 10;
-}
-.our_services .our_services_boxes .box:hover .box_text::after {
-  height: 100%;
-  transition: all 0.4s ease-in-out;
-}
-.our_services .our_services_boxes .box .box_text h5,
-.our_services .our_services_boxes .box .box_text p,
-.our_services .our_services_boxes .box .box_text a {
-  position: relative;
-  z-index: 100;
-}
-.our_services .our_services_boxes .box .box_text h5 {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-.our_services .our_services_boxes .box .box_text p {
-  margin-bottom: 1rem;
-}
-.our_services .our_services_boxes .box .box_text a {
-  transition: all 0.3s;
-}
-.our_services .our_services_boxes .box .box_text a::after {
-  content: "\f061";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-left: 1rem;
-}
-@media screen and (max-width: 768px) {
-  .our_services .our_services_boxes .box {
-    width: calc(100% / 2);
-  }
-  .our_services .our_services_intro {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .our_services .our_services_intro .special_heading {
-    width: 100%;
-  }
-  .our_services .our_services_intro button {
-    margin-top: 2rem;
-  }
-}
-@media (max-width: 575px) {
-  .our_services {
-    padding: 0 10px;
-  }
-  .our_services .our_services_boxes .box {
-    width: 100%;
-  }
-}
 
-/* Start APPOINTMENT */
-.appointment {
-  position: relative;
-  background-image: url(../../img/carousel-2.jpg);
-  background-size: cover;
-  height: 70vh;
-}
-.appointment .overlay {
-  position: absolute;
-  inset: 0;
-}
-.appointment .overlay .contanier {
+/* Start TESTIMONIAL */
+.testimonial .contanier {
   display: flex;
-  padding: 5rem 1rem;
 }
-.appointment .appointment_text {
-  width: 45%;
-  padding-right: 1rem;
+.testimonial .testimonial_text {
+  width: 40%;
 }
-.appointment .appointment_form {
-  width: 55%;
-  padding-left: 1rem;
+.testimonial .testimonial_text p {
+  margin-bottom: 1.5rem;
 }
-.appointment .appointment_form form {
+.testimonial .achievements {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+}
+.testimonial .achievements .icon {
+  display: flex;
   align-items: center;
 }
-.appointment .appointment_form form .form_col {
-  display: flex;
-  width: 100%;
+.testimonial .achievements .icon h2 {
+  font-size: 2.5rem;
+  margin-left: 1rem;
 }
-.appointment .appointment_form form input {
-  padding: 1rem 0.75rem;
-  width: 50%;
-  border: none;
-  margin: 0.5rem;
+.testimonial .achievements .icon i {
+  font-size: 2.25rem;
 }
-.appointment .appointment_form form textarea {
-  padding: 1rem 0.75rem;
-  width: 100%;
-  border: none;
-  margin: 0.5rem;
+.testimonial .testimonial_clients {
+  width: 60%;
+  padding-left: 2rem;
 }
-.appointment .appointment_form form button {
-  width: 100%;
+.testimonial_clients img {
+  width: auto;
 }
-@media (max-width: 575px) {
-  .appointment {
-    height: 135vh;
-  }
-  .appointment .overlay .contanier {
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 2rem 1rem;
-  }
-  .appointment .appointment_text {
-    width: 100%;
-    padding: 1rem 10px;
-  }
-  .appointment .appointment_form {
-    width: 100%;
-    padding: 1rem 10px;
-  }
-  .appointment .appointment_form form .form_col {
-    flex-direction: column;
-    align-items: center;
-  }
-  .appointment .appointment_form form input {
-    width: 100%;
-    padding: 1rem 0.75rem;
-    margin-bottom: 0;
-  }
+.testimonial .testimonial_clients .review {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+.testimonial .testimonial_clients .client_name {
+  margin-bottom: 2rem;
+}
+.testimonial .testimonial_clients .client_name h4 {
+  font-size: 1.25rem;
+}
+.testimonial .testimonial_clients .client_name span {
+  font-size: 1rem;
+}
+.testimonial .testimonial_clients .nav_arrows i {
+  padding: 15px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  margin-right: 1rem;
 }
 
-/* Start OUR TEAM  */
-.our_team .our_team_intro {
-  display: flex;
-  align-items: flex-end;
-}
-.our_team .our_team_intro .special_heading {
-  width: 50%;
-  margin-bottom: 0;
-}
-.our_team .our_team_intro .our_team_intro_p {
-  width: 50%;
-  float: left;
-}
-.our_team .our_team_enngineers {
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-.our_team .our_team_enngineers .enngineer {
-  width: calc(100% / 3);
-  position: relative;
-  padding: 0 0.5rem;
-}
-.our_team .our_team_enngineers .enngineer .text {
-  position: absolute;
-  bottom: 15%;
-  left: 0;
-  width: 70%;
-  padding: 2rem 0 2rem 1rem;
-  transition: all 0.5s ease-in-out;
-}
-.our_team .our_team_enngineers .enngineer .text h5 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-.our_team .our_team_enngineers .enngineer:hover .text {
-  width: 100%;
-  letter-spacing: 2px;
-}
 @media screen and (max-width: 768px) {
-  .our_team {
-    margin-top: 2rem;
-    padding: 0 10px;
-  }
-  .our_team .our_team_intro {
+  .testimonial .contanier {
     flex-direction: column;
-    align-items: flex-start;
   }
-  .our_team .our_team_intro .special_heading,
-  .our_team .our_team_intro .our_team_intro_p {
+  .testimonial .testimonial_text {
     width: 100%;
-    margin-bottom: 1.5rem;
   }
-  .our_team .our_team_enngineers .enngineer {
-    width: 50%;
-  }
-}
-@media (max-width: 575px) {
-  .our_team .our_team_enngineers .enngineer {
+  .testimonial .testimonial_clients {
     width: 100%;
+    margin-top: 2rem;
   }
 }

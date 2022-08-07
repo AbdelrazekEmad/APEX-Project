@@ -1,2 +1,9 @@
 @import url(./home.css);
+@import url(./about-us-section.css);
+@import url(./our-team-section.css);
+@import url(./our-services-section.css);
+@import url(./appointment-section.css);
+@import url(./404.css);
+@import url(./contact-us.css);
 @import url(./shared-classes.css);
+@import url(./shared-sections.css);

@@ -56,6 +56,8 @@ nav .navlinks .toggle_menu {
     top: 100%;
     left: 0;
     width: 100%;
+    z-index: 10000;
+    margin-top: 1.02rem;
   }
   nav .navlinks .links a {
     margin: 10px 0;
@@ -65,24 +67,3 @@ nav .navlinks .links a {
   text-transform: uppercase;
   margin-left: 25px;
 }
-
-
-/* nav .navlinks .dropdown_links {
-  position: absolute;
-  right: 10%;
-  top: 25%;
-  opacity: 1;
-  transition: all 0.5s;
-}
-nav .navlinks .dropdown_links a {
-  display: block;
-  padding: 4px 16px;
-}
-.test{
-    width: 100px;
-    height: 100px;
-    background-color: black;
-}
-#dropdown_toggle:hover . {
-  display: none;
-} */
