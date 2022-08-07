@@ -5,4 +5,19 @@
   transition: all 0.5s;
   padding: 1rem 3rem;
   cursor: pointer;
+  border: none;
+}
+
+/* Start home (special_heading) */
+.special_heading {
+  padding-left: 1.5rem;
+  margin-bottom: 3rem;
+}
+.special_heading h6 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.special_heading h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 700;
 }

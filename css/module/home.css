@@ -95,15 +95,15 @@
   width: 50%;
   padding: 0 2rem;
 }
-.about_us .content .special_heading {
+.special_heading {
   padding-left: 1.5rem;
   margin-bottom: 3rem;
 }
-.about_us .content .special_heading h6 {
+.special_heading h6 {
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
-.about_us .content .special_heading h1 {
+.special_heading h1 {
   font-size: calc(1.375rem + 1.5vw);
   font-weight: 700;
 }
@@ -147,6 +147,9 @@
   .about_us .image .photo {
     max-height: 400px;
     margin-bottom: 3rem;
+  }
+  .about_us .content {
+    padding: 0 1rem;
   }
 }
 
@@ -328,7 +331,93 @@
     flex-direction: column;
   }
   .why_choose_us .content .about_benefits .benefit {
-  width: 100%;
-  margin-bottom: 2.5rem;
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* Start OUR SERVICES */
+.our_services .our_services_intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+.our_services .our_services_intro .special_heading {
+  width: 50%;
+  margin-bottom: 0;
+}
+.our_services .our_services_intro button {
+  float: right;
+}
+.our_services .our_services_boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.our_services .our_services_boxes .box {
+  width: calc(100% / 3);
+}
+.our_services .our_services_boxes .box .box_contanier {
+  margin: 0.5rem;
+  text-align: center;
+}
+.our_services .our_services_boxes .box .box_text {
+  padding: 2rem;
+  position: relative;
+}
+.our_services .our_services_boxes .box .box_text::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 0;
+  z-index: 10;
+}
+.our_services .our_services_boxes .box:hover .box_text::after {
+  height: 100%;
+  transition: all 0.4s ease-in-out;
+}
+.our_services .our_services_boxes .box .box_text h5,
+.our_services .our_services_boxes .box .box_text p,
+.our_services .our_services_boxes .box .box_text a {
+  position: relative;
+  z-index: 100;
+}
+.our_services .our_services_boxes .box .box_text h5 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.our_services .our_services_boxes .box .box_text p {
+  margin-bottom: 1rem;
+}
+.our_services .our_services_boxes .box .box_text a {
+  transition: all 0.3s;
+}
+.our_services .our_services_boxes .box .box_text a::after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .our_services .our_services_boxes .box {
+    width: calc(100% / 2);
+  }
+  .our_services .our_services_intro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .our_services .our_services_intro .special_heading {
+    width: 100%;
+  }
+  .our_services .our_services_intro button {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 575px) {
+  .our_services {
+    padding: 0 10px;
+  }
+  .our_services .our_services_boxes .box {
+    width: 100%;
   }
 }

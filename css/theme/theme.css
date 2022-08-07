@@ -107,10 +107,10 @@ footer .copyright_footer span:hover {
 .about_us .image .experience_content {
   background-color: var(--main-color);
 }
-.about_us .content .special_heading {
+.special_heading {
   border-left: 5px solid var(--main-color);
 }
-.about_us .content .special_heading h6 {
+.special_heading h6 {
   color: var(--secondary-color);
 }
 .about_us .content .about_benefits .benefit i {
@@ -139,7 +139,7 @@ footer .copyright_footer span:hover {
 
 /* Start WHY CHOOSE US */
 .why_choose_us .image .experience {
-background-color: white;
+  background-color: white;
 }
 .why_choose_us .image .experience_content {
   background-color: var(--main-color);
@@ -155,4 +155,21 @@ background-color: white;
 }
 .why_choose_us .content .about_benefits {
   border-top: 1px solid #dee2e6;
+}
+
+/* Start OUR SERVICES */
+.our_services .our_services_boxes .box .box_contanier {
+  background-color: var(--lighter-color);
+}
+.our_services .our_services_boxes .box .box_text a {
+  color: var(--main-color);
+}
+.our_services .our_services_boxes .box .box_text::after {
+  background-color: var(--main-color);
+  color: white;
+}
+.our_services .our_services_boxes .box:hover h5,
+.our_services .our_services_boxes .box:hover p,
+.our_services .our_services_boxes .box:hover a {
+  color: white ;
 }
