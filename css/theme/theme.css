@@ -171,5 +171,27 @@ footer .copyright_footer span:hover {
 .our_services .our_services_boxes .box:hover h5,
 .our_services .our_services_boxes .box:hover p,
 .our_services .our_services_boxes .box:hover a {
-  color: white ;
+  color: white;
+}
+
+/* Start APPOINTMENT */
+.appointment .overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.appointment .overlay .appointment_text .special_heading h6,
+.appointment .overlay .appointment_text .special_heading h1,
+.appointment .overlay .appointment_text p {
+  color: white;
+}
+.appointment .appointment_form form input,
+.appointment .appointment_form form textarea {
+  background-color: var(--darker-color);
+}
+
+/* Start OUR TEAM  */
+.our_team .our_team_enngineers .enngineer .text {
+  background-color: white;
+}
+.our_team .our_team_enngineers .enngineer span {
+  color: var(--secondary-color);
 }
